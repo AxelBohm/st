@@ -88,27 +88,27 @@ unsigned int alpha = 0xcc;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
     /* "#282828", /1* hard contrast: #1d2021 / soft contrast: #32302f *1/ */
-    "#262626",
-	"#cc241d",
-	"#98971a",
-	"#d79921",
-	"#458588",
-	"#b16286",
-	"#689d6a",
-	"#a89984",
-	"#928374",
-	"#fb4934",
-	"#b8bb26",
-	"#fabd2f",
-	"#83a598",
-	"#d3869b",
-	"#8ec07c",
-    "#ebdbb2",
+    "#282828", /* bg     */
+	"#cc241d", /* red    */
+	"#98971a", /* green  */
+	"#d79921", /* yellow */
+	"#458588", /* blue   */
+	"#b16286", /* purple */
+	"#689d6a", /* aqua   */
+	"#a89984", /* gray   */
+	"#928374", /* gray   */
+	"#fb4934", /* red    */
+	"#b8bb26", /* green  */
+	"#fabd2f", /* yellow */
+	"#83a598", /* blue   */
+	"#d3869b", /* purple */
+	"#8ec07c", /* aqua   */
+    "#ebdbb2", /* fg     */
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
 	"#555555",
-	"black",
+
 };
 
 
