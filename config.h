@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Mono:pixelsize=13:antialias=true:autohint=true";
+static char font[] = "xos4 Terminus:pixelsize=15:antialias=true:autohint=true";
 static int borderpx = 15;
 
 /*
