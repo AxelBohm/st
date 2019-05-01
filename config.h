@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char font[] = "xos4 Terminus:pixelsize=15:antialias=true:autohint=true";
-static int borderpx = 15;
+static char font[] = "xos4 Terminus:pixelsize=12:antialias=true:autohint=true";
+static int borderpx = 12;
 
 /*
  * What program is execed by st depends of these precedence rules:
