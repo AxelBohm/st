@@ -87,6 +87,7 @@ unsigned int alpha = 0xcc;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
+    /* gruvbox */
     "#282828", /* bg     */
 	"#cc241d", /* red    */
 	"#98971a", /* green  */
@@ -104,23 +105,23 @@ static const char *colorname[] = {
 	"#8ec07c", /* aqua   */
     "#ebdbb2", /* fg     */
 
-    /* "#282828", /1* black   *1/ */
-    /* "#d17b49", /1* red     *1/ */
-    /* "#7b8748", /1* green   *1/ */
-    /* "#af865a", /1* yellow  *1/ */
-    /* "#535C5C", /1* blue    *1/ */
-    /* "#775759", /1* magenta *1/ */
-    /* "#6d715e", /1* cyan    *1/ */
-    /* "#c0b18b", /1* white   *1/ */
-
-    /* "#4A3637", /1* black   *1/ */
-    /* "#d17b49", /1* red     *1/ */
-    /* "#7b8748", /1* green   *1/ */
-    /* "#af865a", /1* yellow  *1/ */
-    /* "#535C5C", /1* blue    *1/ */
-    /* "#775759", /1* magenta *1/ */
-    /* "#6d715e", /1* cyan    *1/ */
-    /* "#c0b18b", /1* white   *1/ */
+    /* ocean */
+    /* "#2b303b", /1* base00 *1/ */
+    /* "#bf616a", /1* base08 *1/ */
+    /* "#a3be8c", /1* base0B *1/ */
+    /* "#ebcb8b", /1* base0A *1/ */
+    /* "#8fa1b3", /1* base0D *1/ */
+    /* "#b48ead", /1* base0E *1/ */
+    /* "#96b5b4", /1* base0C *1/ */
+    /* "#c0c5ce", /1* base05 *1/ */
+    /* "#65737e", /1* base03 *1/ */
+    /* "#d08770", /1* base09 *1/ */
+    /* "#343d46", /1* base01 *1/ */
+    /* "#4f5b66", /1* base02 *1/ */
+    /* "#a7adba", /1* base04 *1/ */
+    /* "#dfe1e8", /1* base06 *1/ */
+    /* "#ab7967", /1* base0F *1/ */
+    /* "#eff1f5", /1* base07 *1/ */
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
@@ -145,7 +146,7 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 4;
 
 /*
  * Default columns and rows numbers
