@@ -185,12 +185,16 @@ MouseKey mkeys[] = {
 	{ Button5,              ShiftMask,      kscrolldown,    {.i =  1} },
 };
 
+static char *openurlcmd[] = { "/bin/sh", "-c",
+	"~/bin/link_grabber.sh ", "externalpipe", NULL };
+
 /* Internal keyboard shortcuts. */
 #define ALTKEY Mod1Mask
 #define TERMMOD (ControlMask|ShiftMask)
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
+    { TERMMOD,              XK_U,           externalpipe,   { .v = openurlcmd } },
 	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
