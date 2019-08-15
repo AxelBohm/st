@@ -127,7 +127,6 @@ static const char *colorname[] = {
     [256] = "#d8dee9", /* 256: nord4 */
     [257] = "#2e3440", /* 257: nord0 */
 
-
 };
 
 
@@ -185,8 +184,9 @@ MouseKey mkeys[] = {
 	{ Button5,              ShiftMask,      kscrolldown,    {.i =  1} },
 };
 
-static char *openurlcmd[] = { "/bin/sh", "-c",
-	"~/bin/link_grabber.sh ", "externalpipe", NULL };
+static char *openurlcmd[] = { "/bin/sh", "-c", "~/bin/link_grabber.sh ", "externalpipe", NULL };
+static char *openytcmd[] =  { "/bin/sh", "-c", "~/bin/yt_grabber.sh ", "externalpipe", NULL };
+static char *arxivdlcmd[] = { "/bin/sh", "-c", "~/bin/arxiv_dl.sh ", "externalpipe", NULL };
 
 /* Internal keyboard shortcuts. */
 #define ALTKEY Mod1Mask
@@ -195,6 +195,8 @@ static char *openurlcmd[] = { "/bin/sh", "-c",
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
     { TERMMOD,              XK_U,           externalpipe,   { .v = openurlcmd } },
+    { TERMMOD,              XK_Y,           externalpipe,   { .v = openytcmd } },
+    { TERMMOD,              XK_A,           externalpipe,   { .v = arxivdlcmd } },
 	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
@@ -211,8 +213,8 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_I,           iso14755,       {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
 	{ ShiftMask,            XK_Page_Down,   kscrolldown,    {.i = -1} },
-	{ TERMMOD,              XK_K,           kscrollup,      {.i = -1} },
-	{ TERMMOD,              XK_J,           kscrolldown,    {.i = -1} },
+	{ TERMMOD,              XK_E,           kscrollup,      {.i = -1} },
+	{ TERMMOD,              XK_N,           kscrolldown,    {.i = -1} },
 };
 
 /*
