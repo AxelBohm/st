@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char font[] = "xos4 Terminus:pixelsize=12:antialias=true:autohint=true";
+static char font[] = "Terminus:pixelsize=12";
 static int borderpx = 12;
 
 /*
@@ -137,7 +137,7 @@ static const char *colorname[] = {
 unsigned int defaultfg = 256;
 unsigned int defaultbg = 257;
 static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 8;
+static unsigned int defaultrcs = 257;
 
 /*
  * Default shape of cursor
