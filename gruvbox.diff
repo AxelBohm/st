@@ -1,8 +1,19 @@
 diff --git a/config.def.h b/config.def.h
-index 4b4758d..d764a09 100644
+index 6f05dce..d5db106 100644
 --- a/config.def.h
 +++ b/config.def.h
-@@ -84,27 +84,22 @@ unsigned int tabspaces = 8;
+@@ -5,8 +5,8 @@
+  *
+  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+  */
+-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+-static int borderpx = 2;
++static char *font = "Liberation Mono:pixelsize=13:antialias=true:autohint=true";
++static int borderpx = 10;
+ 
+ /*
+  * What program is execed by st depends of these precedence rules:
+@@ -95,27 +95,22 @@ unsigned int tabspaces = 8;
  
  /* Terminal colors (16 first used in escape sequence) */
  static const char *colorname[] = {
@@ -46,7 +57,7 @@ index 4b4758d..d764a09 100644
  
  	/* more colors can be added after 255 to use with DefaultXX */
  	"#cccccc",
-@@ -116,9 +111,9 @@ static const char *colorname[] = {
+@@ -127,9 +122,9 @@ static const char *colorname[] = {
   * Default colors (colorname index)
   * foreground, background, cursor, reverse cursor
   */
