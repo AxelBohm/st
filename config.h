@@ -88,44 +88,44 @@ unsigned int alpha = 0xcc;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
     /* gruvbox */
-    /* "#282828", /1* bg     *1/ */
-	/* "#cc241d", /1* red    *1/ */
-	/* "#98971a", /1* green  *1/ */
-	/* "#d79921", /1* yellow *1/ */
-	/* "#458588", /1* blue   *1/ */
-	/* "#b16286", /1* purple *1/ */
-	/* "#689d6a", /1* aqua   *1/ */
-	/* "#a89984", /1* gray   *1/ */
-	/* "#928374", /1* gray   *1/ */
-	/* "#fb4934", /1* red    *1/ */
-	/* "#b8bb26", /1* green  *1/ */
-	/* "#fabd2f", /1* yellow *1/ */
-	/* "#83a598", /1* blue   *1/ */
-	/* "#d3869b", /1* purple *1/ */
-	/* "#8ec07c", /1* aqua   *1/ */
-    /* "#ebdbb2", /1* fg     *1/ */
+    "#222222", /* bg     */
+	"#aa4450", /* red    */
+	"#719611", /* green  */
+	"#ff9800", /* yellow */
+	"#6688aa", /* blue   */
+	"#8f6f8f", /* purple */
+	"#528b8b", /* aqua   */
+	"#d3d3d3", /* gray   */
+	"#686858", /* gray   */
+	"#ff6a6a", /* red    */
+	"#b1d631", /* green  */
+	"#87875f", /* yellow */
+	"#90b0d1", /* blue   */
+	"#8181a6", /* purple */
+	"#87ceeb", /* aqua   */
+    "#c2c2b0", /* fg     */
 
     /* nord */
-    "#3b4252", /*  0: nord1 */
-    "#bf616a", /*  1: nord11 */
-    "#a3be8c", /*  2: nord14 */
-    "#ebcb8b", /*  3: nord13 */
-    "#81a1c1", /*  4: nord9 */
-    "#b48ead", /*  5: nord15 */
-    "#88c0d0", /*  6: nord8 */
-    "#e5e9f0", /*  7: nord5 */
-    "#4c566a", /*  8: nord3 */
-    "#bf616a", /*  9: nord11 */
-    "#a3be8c", /* 10: nord14 */
-    "#ebcb8b", /* 11: nord13 */
-    "#81a1c1", /* 12: nord9 */
-    "#b48ead", /* 13: nord15 */
-    "#8fbcbb", /* 14: nord7 */
-    "#eceff4", /* 15: nord6 */
-    [255] = 0,
+    /* "#3b4252", /1*  0: nord1 *1/ */
+    /* "#bf616a", /1*  1: nord11 *1/ */
+    /* "#a3be8c", /1*  2: nord14 *1/ */
+    /* "#ebcb8b", /1*  3: nord13 *1/ */
+    /* "#81a1c1", /1*  4: nord9 *1/ */
+    /* "#b48ead", /1*  5: nord15 *1/ */
+    /* "#88c0d0", /1*  6: nord8 *1/ */
+    /* "#e5e9f0", /1*  7: nord5 *1/ */
+    /* "#4c566a", /1*  8: nord3 *1/ */
+    /* "#bf616a", /1*  9: nord11 *1/ */
+    /* "#a3be8c", /1* 10: nord14 *1/ */
+    /* "#ebcb8b", /1* 11: nord13 *1/ */
+    /* "#81a1c1", /1* 12: nord9 *1/ */
+    /* "#b48ead", /1* 13: nord15 *1/ */
+    /* "#8fbcbb", /1* 14: nord7 *1/ */
+    /* "#eceff4", /1* 15: nord6 *1/ */
+    /* [255] = 0, */
 	/* more colors can be added after 255 to use with DefaultXX */
-    [256] = "#d8dee9", /* 256: nord4 */
-    [257] = "#2e3440", /* 257: nord0 */
+    /* [256] = "#d8dee9", /1* 256: nord4 *1/ */
+    /* [257] = "#2e3440", /1* 257: nord0 *1/ */
 
 };
 
@@ -134,10 +134,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 256;
-unsigned int defaultbg = 257;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 8;
+unsigned int defaultfg = 15;
+unsigned int defaultbg = 0;
+static unsigned int defaultcs = 15;
+static unsigned int defaultrcs = 0;
 
 /*
  * Default shape of cursor
