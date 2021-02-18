@@ -87,7 +87,7 @@ unsigned int alpha = 0xcc;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    /* gruvbox */
+    /* sourcerer */
     "#222222", /* bg     */
 	"#aa4450", /* red    */
 	"#719611", /* green  */
